@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Equities",
+    "description": "Strategic equity investments with a focus on value creation and long-term portfolio growth through market-driven opportunities.",
+    "icon": "assets/icon-equities.svg",
+    "alt": "Equities Investment Icon"
+  },
+  {
+    "name": "Risk Management",
+    "description": "Comprehensive risk assessment and mitigation strategies designed to protect your portfolio and minimize downside exposure.",
+    "icon": "assets/icon-risk.svg",
+    "alt": "Risk Management Icon"
+  },
+  {
+    "name": "Hedging Strategies",
+    "description": "Advanced hedging techniques to generate consistent cash flows and protect against market volatility while optimizing returns.",
+    "icon": "assets/icon-hedging.svg",
+    "alt": "Hedging Strategies Icon"
+  }
+]

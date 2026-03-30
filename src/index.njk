@@ -1,0 +1,125 @@
+---
+layout: base.njk
+title: Grow8 Asset Management | Investment Solutions
+description: Comprehensive investment solutions focused on equities with emphasis on risk management and hedging strategies to generate consistent cash flows.
+---
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Grow8 Asset Management</h1>
+    <p class="tagline">Professional Investment Solutions</p>
+    <p>Comprehensive investment strategies focused on equities with emphasis on risk management and hedging to generate consistent cash flows.</p>
+    <div class="cta-buttons">
+      <a href="#contact" class="btn btn-primary">Get Started</a>
+      <a href="#services" class="btn btn-secondary">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="section">
+  <div class="container">
+    <div class="about">
+      <div class="about-content">
+        <h2>About Grow8</h2>
+        <p>Grow8 Asset Management is a forward-thinking investment solutions firm dedicated to delivering superior returns through strategic equities management, comprehensive risk mitigation, and innovative hedging strategies.</p>
+        <p>With a focus on generating consistent cash flows and protecting portfolio value, we combine market expertise with sophisticated risk management techniques to help our clients achieve their financial objectives.</p>
+        <p>Our approach is centered on understanding each client's unique needs and tailoring investment strategies that balance growth potential with downside protection.</p>
+        <p><strong>Chintan Dave</strong> — Investment Solutions Expert</p>
+      </div>
+      <div>
+        <img src="assets/profile.jpg" alt="Chintan Dave - Investment Solutions Expert" class="profile-photo" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="section section-alt" id="services">
+  <div class="container">
+    <h2 style="text-align: center;">Our Services</h2>
+    <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">We provide comprehensive investment solutions tailored to your financial goals and risk tolerance.</p>
+    
+    <div class="services-grid">
+      {% for service in services %}
+        <div class="service-card">
+          <img src="{{ service.icon }}" alt="{{ service.alt }}" class="service-icon" onerror="this.style.display='none'">
+          <h3>{{ service.name }}</h3>
+          <p>{{ service.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 style="margin-bottom: 0.5rem;">Get In Touch</h2>
+    <p style="margin-bottom: 3rem; color: var(--text-light);">Have questions about our investment solutions? We'd love to hear from you. Reach out today to discuss your investment goals.</p>
+    
+    <div class="contact-wrapper">
+      <div>
+        <div id="formMessage" class="form-message"></div>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+      
+      <aside class="contact-info">
+        <h3>Contact Information</h3>
+        
+        <div class="contact-item">
+          <strong>Phone</strong>
+          <a href="tel:{{ site.phone }}">{{ site.phone_display }}</a>
+        </div>
+        
+        <div class="contact-item">
+          <strong>Email</strong>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+        
+        <div class="contact-item">
+          <strong>Address</strong>
+          <p>{{ site.address }}</p>
+          <p style="color: var(--text-light); font-size: 0.9rem;">{{ site.city }}, Gujarat, India</p>
+        </div>
+        
+        <div class="contact-item" style="margin-top: 2rem;">
+          <strong>Quick Connect</strong>
+          <a href="https://wa.me/{{ site.phone | replace(' ', '') | replace('+91', '') }}?text=Hi%20Grow8%20Asset%20Management%2C%20I%27m%20interested%20in%20your%20investment%20solutions." target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">WhatsApp Us</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Grow Your Portfolio?</h2>
+    <p>Let's discuss how our investment solutions can help you achieve your financial goals with confidence and consistent returns.</p>
+    <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
+  </div>
+</section>

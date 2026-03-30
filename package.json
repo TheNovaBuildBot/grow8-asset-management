@@ -1,0 +1,18 @@
+{
+  "name": "grow8-asset-management",
+  "version": "1.0.0",
+  "description": "Grow8 Asset Management - Comprehensive Investment Solutions",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "deploy": "wrangler deploy"
+  },
+  "keywords": ["investment", "asset management", "equities", "risk management"],
+  "author": "Grow8 Asset Management",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "wrangler": "^4.0.0"
+  }
+}
