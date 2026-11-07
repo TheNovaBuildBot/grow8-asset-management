@@ -1,0 +1,5 @@
+{
+  "name": "nova-paused",
+  "private": true,
+  "scripts": {"build": "mkdir -p _site && cp index.html 404.html _redirects _site/"}
+}
